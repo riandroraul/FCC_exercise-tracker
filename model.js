@@ -8,7 +8,7 @@ const Users = mongoose.model('Users',{
 
 const Exercise = mongoose.model('Exercises', {
   user_id: {
-    type: String
+    type: String, required: true
   },
   description: {
     type: String
